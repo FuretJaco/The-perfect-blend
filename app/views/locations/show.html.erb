@@ -1,0 +1,8 @@
+<h1>Liste des vins pour <%= @une_region.name %></h1>
+
+<p><% @une_region.name %></p>
+
+<ul> <% @les_vins.each do |vin| %>
+	<li><a href="/vin/detail/<%=vin.id%>"><%= vin.name%></a></li>
+</ul>
+ <%end%>

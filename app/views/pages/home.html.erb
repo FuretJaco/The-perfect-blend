@@ -1,0 +1,57 @@
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    	<%= image_tag 'WineHeader.jpg',:title => 'wine'  %>
+      <div class="carousel-caption">
+        <h3>"Le whisky! Rien de plus dur à avaler! Dans les pays civilisés on boit du vin." </3>
+        	<p>- Charlie Chaplin - </p>
+      </div>
+    </div>
+    <div class="item">
+    	<%= image_tag 'WineHeader2.jpg', :title =>'wine' %>
+      <div class="carousel-caption">
+        <h3>"Hâtons nous de succomber à la tentation...Avant qu'elle ne s'éloigne."</h3>
+        <p> -Epicure - </p>
+      </div>
+    </div>
+    <div class="item">
+    	<%= image_tag 'WineHeader3.jpg', :title =>'wine' %>
+      <div class="carousel-caption">
+        <h3>"Le meilleur vin n'est pas nécessairement le plus cher, mais celui qu'on partage." </h3>
+        <p>- George Brassens -</p> 
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="row">
+  <div class="col-md-6">
+  	<a href="/vin/home"/>
+  		<button id="btn_vin"><%= image_tag src="wine_glass.png" %>
+  		</button>
+  	</a>
+  </div>
+  <div class="col-md-6">
+  	<a href="/fromages/home"/>
+  		<button id="btn_fromage"><%= image_tag src="cheese.png" %>
+  		</button>
+  	</a></div>
+</div>
+
+

@@ -1,0 +1,7 @@
+<h1>Vin#cepage</h1>
+
+<p>
+	<% @les_cepages.each do |un_cepage| %>
+		<a href="/cepage/<%=un_cepage.id %>"><%= un_cepage.name %></a>
+	<% end %>
+</p>

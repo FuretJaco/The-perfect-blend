@@ -1,0 +1,6 @@
+<h1>Liste des fromages selon leur laitage </h1>
+
+<p><% @les_categories.each do |une_categorie| %>
+	<a href="/categorie/<%= une_categorie.id %>"><%= une_categorie.name %></a>
+</p>
+<% end %>

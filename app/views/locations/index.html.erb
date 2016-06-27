@@ -1,0 +1,6 @@
+<h1>Trouvez votre vin par région</h1>
+
+<p><% @les_regions.each do |region| %>
+	<a href="/index/<%= region.id %>"><%= region.name %></a></p>
+<% end %>
+

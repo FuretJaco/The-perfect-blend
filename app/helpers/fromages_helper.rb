@@ -1,0 +1,2 @@
+module FromagesHelper
+end

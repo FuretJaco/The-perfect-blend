@@ -1,0 +1,6 @@
+<h1>Liste des fromages selon leur texture</h1>
+
+<p><% @les_pates.each do |une_pate| %>
+	<a href="/pate/<%= une_pate.id %>"><%= une_pate.name %></a>
+</p>
+<% end %>

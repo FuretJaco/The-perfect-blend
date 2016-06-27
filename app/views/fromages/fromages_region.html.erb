@@ -1,0 +1,7 @@
+<h1>Liste des fromages de <%= @une_region.name %></h1>
+
+<ul><% @les_fromages.each do |fromage| %>
+	<li><a href="/fromages/detail/<%=fromage.id %>"><%= fromage.name %></a></li>
+</ul>
+<% end %>
+

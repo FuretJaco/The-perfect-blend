@@ -1,0 +1,13 @@
+<h3>Détails <%= @un_vin.name %></h3>
+
+<%= @un_vin.year %>
+<%= @un_vin.description %>
+
+<h3>Fromages qui se marient agréablement avec ce vin </h3>
+<ul>
+<% @mariage_fromage.each do |pair| %>
+	<li><a href="/fromages/detail/<%=pair.id %>"><%= pair.name %></a></li>
+
+<% end %>
+
+</ul>

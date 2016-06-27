@@ -1,0 +1,9 @@
+<h1>Régions France - Belgique - Italie - Espagne </h1>
+<p>
+<% @les_regions.each do |une_region| %>
+	<a href="/region/<%= une_region.id %>">
+		<%= une_region.name %></a>
+<% end %>
+</p>
+
+
