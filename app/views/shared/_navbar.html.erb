@@ -14,27 +14,25 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/pages/about">About <span class="sr-only">(current)</span></a></li>
-        <li><a href="/pages/contact">Contact</a></li>
+        <li class="active"><a href="/pages/about">A propos <span class="sr-only">(current)</span></a></li>
+        <li><a href="/pages/contact">Contactez-moi</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">search <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Recherches <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/vin/home">Vin</a></li>
             <li><a href="/fromages/home">Fromage</a></li>
             <li></li>
           </ul>
         </li>
+        <!--<ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>-->
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
       <% if current_user.present? %>
-          Welcome <%= current_user.login %>! Content de vous revoir!| <%= link_to "Sign out", logout_path %> | <%= link_to "My account" %>
+          <%= current_user.login %>! Content de vous revoir!| <%= link_to "Déconnexion", logout_path %> | <%= link_to "Mon compte", index_path %>
       <% else %>
-          <%= link_to "Register", new_user_path %> | <%= link_to "Sign in", login_path %>
+          <%= link_to "S'enregistrer", new_user_path %> | <%= link_to "Se connecter", login_path %>
       <% end %>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -17,9 +17,9 @@ class FromagesController < ApplicationController
   def detail
   	@un_fromage = Cheese.find(params[:id])
     @pairings = Pairing.where("cheese_id=?",params[:id])
-    @mariage_vin=Array.new
+    @mariage_vin =  Array.new
     @pairings.each do |pairing|
-      @wine=Wine.find(pairing.wine_id)
+      @wine = Wine.find(pairing.wine_id)
      @mariage_vin.push(@wine)
    end
    

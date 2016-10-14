@@ -1,0 +1,9 @@
+<h3>Bienvenue sur votre page personnelle, <%= current_user.login %></h3>
+	<p>Vous avez la possibilité de proposer un nouveau vin que vous souhaiteriez faire découvrir à d'autres personnes, tout comme vous avez la possibilité de proposer un fromage</p>
+<% if @current_user %>
+	<% if current_user.role == "admin" %>
+		<h5>Proposer un nouveau vin</h5>
+		<% else %>
+    <h1>Bienvenue <%= @current_user.name %> !</h1>
+  <% end %>
+<% end %>

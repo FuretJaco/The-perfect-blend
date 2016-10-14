@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   get '/login', to: "sessions#new"
   get '/logout', to: "sessions#destroy"
- 
+  get '/index', to: "sessions#index"
   #-----------------------------------------------------------
   #routes pour les fromages
   #get "Recherche_vin" => "vin#home"
@@ -40,13 +40,9 @@ Rails.application.routes.draw do
   get 'vin/classe'
   get 'vin/couleur'
   get 'couleur/:id' => 'vin#vin_couleur'
-  
-
   get 'vin/cepage'
   get 'cepage/:id' =>'vin#vin_cepage'
-  
   get 'vin/detail/:id' => 'vin#detail'
-
   get 'locations/index'
   get 'index/:id' => 'locations#show'
 
